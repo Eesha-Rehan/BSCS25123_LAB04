@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Creations - Products</title>
+    <link rel="stylesheet" href="BSCS25123_style.css">
+  
+
+   
+  <script>
+  
+  function checkStock(productId, inStock) {
+    const statusElement = document.getElementById(productId);
+    if (inStock) {
+      statusElement.textContent = "In Stock";
+    } else {
+      statusElement.textContent = "Out of Stock";
+    }
+  }
+
+
+  </script>
+</head>
+<body>
+   
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Crochet Creations</h1>
+            <ul class="nav-links">
+                <li><a href="BSCS25123_Home.html">Home</a></li>
+                <li><a href="BSCS25123_Products.html">Products</a></li>
+                <li><a href="BSCS25123_Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <section class="products">
+        <h2>Our Crochet Products</h2>
+        <div class="product-box">
+            <img src="images/crochet-moss-stitch-scarf-progress-shot20.jpg" alt="Crochet Scarf">
+           
+            <h3>Handmade Crochet Scarf</h3>
+            <p>Price: Rs. 1,200</p>
+             <button onclick="checkStock('p1',true)">Check stock</button>
+            <p class = "status" id="p1"></p>
+          
+            
+             <p>id A cozy, hand-knitted scarf perfect for winter warmth </p> 
+            </div>
+
+        <div class="product-box">
+               <img src="images/images (5).jpg" alt="Crochet Basket">
+              
+            <h3>Storage Crochet Basket</h3>
+            <p>Price: Rs. 800</p>
+             <button onclick="checkStock('p2',false)">Check stock</button>
+
+           <p class = "status" id="p2"></p>
+        
+            <p>Beautiful crochet basket to organize your essentials neatly.</p>
+        </div>
+
+        <div class="product-box">
+            <img src="images/images.jpg" alt="Crochet Doll">
+            
+            <h3>Crochet Doll</h3>
+            <p>Price: Rs. 1,500</p>
+          
+            <p>Cute handmade crochet doll perfect as a gift for children.</p>
+            <button onclick="checkStock('p3',false)">Check stock</button>
+             <p class = "status" id="p3"></p>
+        </div>
+
+        <div class="product-box">
+            <img src="images/Crochet-Bernat-Study-of-Reality-Blanket-Pattern-700x700.jpg" alt="Crochet Blanket">
+            
+            <h3>Crochet Baby Blanket</h3>
+            <p>Price: Rs. 3,000</p>
+         
+            <p>Soft and warm blanket specially crafted for newborns.</p>
+            <button onclick="checkStock('p4',true)">Check stock</button>
+             <p class = "status" id="p4"></p>
+        </div>
+
+        <div class="product-box">
+            <img src="images/images (1).jpg" alt="Crochet Hat">
+            <button onclick="checkStock('p5',true)">Check stock</button>
+             <p class = "status" id="p5"></p>
+            <h3>Stylish Crochet Hat</h3>
+            <p>Price: Rs. 900</p>
+          
+            <p>Elegant crochet hat to keep you cozy and stylish during winter.</p>
+        </div>
+    </section>
+
+  
+    <footer>
+        <p>Contact Us: +92-3217356361 | crochetcreations@gmail.com | Lahore, Pakistan</p>
+        <p>&copy; 2025 Crochet Creations</p>
+    </footer>
+</body>
+</html>
